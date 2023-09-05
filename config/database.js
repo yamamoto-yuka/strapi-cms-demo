@@ -96,11 +96,11 @@ module.exports = ({ env }) => ({
     client: 'mysql',
     connection: {
 
-      host: env('DATABASE_HOST', 'localhost'),
-      port: env.int('DATABASE_PORT', 8889),
+      host: env('DATABASE_HOST', '139.59.102.235/'),
+      port: env.int('DATABASE_PORT', 3306),
       database: env('DATABASE_NAME', 'strapi'),
-      user: env('DATABASE_USERNAME', 'root'),
-      password: env('DATABASE_PASSWORD', 'root'),
+      user: env('DATABASE_USERNAME', 'strapi'),
+      password: env('DATABASE_PASSWORD', 'strapi'),
       ssl: {
         rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
       },
